@@ -16,11 +16,13 @@
 		907B529824367A16008E825F /* VIReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B529724367A16008E825F /* VIReusableCell.swift */; };
 		90A4120F243688E9000289C8 /* VIArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4120D243688E9000289C8 /* VIArticleDetailsViewController.swift */; };
 		90A41210243688E9000289C8 /* VIArticleDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A4120E243688E9000289C8 /* VIArticleDetailsViewController.xib */; };
-		90B8CC122437404F00496FDA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B8CC112437404F00496FDA /* Storage.swift */; };
+		90B8CC122437404F00496FDA /* VIStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B8CC112437404F00496FDA /* VIStorage.swift */; };
 		90F035712437548F008DE844 /* AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F035702437548F008DE844 /* AssignmentTests.swift */; };
 		90F03574243754B7008DE844 /* VIArticleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F03573243754B7008DE844 /* VIArticleTest.swift */; };
 		90F03577243754C6008DE844 /* Article.json in Resources */ = {isa = PBXBuildFile; fileRef = 90F03576243754C6008DE844 /* Article.json */; };
 		90F0357924375764008DE844 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 90F0357824375764008DE844 /* Articles.json */; };
+		90F0357B243770D3008DE844 /* VIStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0357A243770D3008DE844 /* VIStorageTest.swift */; };
+		90F0357E243773B9008DE844 /* MockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0357D243773B9008DE844 /* MockHelper.swift */; };
 		90F3B33C243661BE00C767B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3B33B243661BE00C767B1 /* AppDelegate.swift */; };
 		90F3B345243661C000C767B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F3B344243661C000C767B1 /* Assets.xcassets */; };
 		90F3B348243661C000C767B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F3B346243661C000C767B1 /* LaunchScreen.storyboard */; };
@@ -68,12 +70,14 @@
 		907B529724367A16008E825F /* VIReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIReusableCell.swift; sourceTree = "<group>"; };
 		90A4120D243688E9000289C8 /* VIArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		90A4120E243688E9000289C8 /* VIArticleDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VIArticleDetailsViewController.xib; sourceTree = "<group>"; };
-		90B8CC112437404F00496FDA /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		90B8CC112437404F00496FDA /* VIStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIStorage.swift; sourceTree = "<group>"; };
 		90CDD93E24374368005962CD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F035702437548F008DE844 /* AssignmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentTests.swift; sourceTree = "<group>"; };
 		90F03573243754B7008DE844 /* VIArticleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIArticleTest.swift; sourceTree = "<group>"; };
 		90F03576243754C6008DE844 /* Article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Article.json; sourceTree = "<group>"; };
 		90F0357824375764008DE844 /* Articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Articles.json; sourceTree = "<group>"; };
+		90F0357A243770D3008DE844 /* VIStorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIStorageTest.swift; sourceTree = "<group>"; };
+		90F0357D243773B9008DE844 /* MockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelper.swift; sourceTree = "<group>"; };
 		90F3B338243661BE00C767B1 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F3B33B243661BE00C767B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F3B344243661C000C767B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,7 +218,7 @@
 		90B8CC102437404400496FDA /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				90B8CC112437404F00496FDA /* Storage.swift */,
+				90B8CC112437404F00496FDA /* VIStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -222,7 +226,9 @@
 		90F03572243754A6008DE844 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				90F0357C243773A8008DE844 /* Helper */,
 				90F03573243754B7008DE844 /* VIArticleTest.swift */,
+				90F0357A243770D3008DE844 /* VIStorageTest.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -234,6 +240,14 @@
 				90F03576243754C6008DE844 /* Article.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		90F0357C243773A8008DE844 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				90F0357D243773B9008DE844 /* MockHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		90F3B32F243661BE00C767B1 = {
@@ -640,7 +654,7 @@
 				907B5290243678BC008E825F /* VIArticlesModel.swift in Sources */,
 				90F3B3712436641500C767B1 /* VIMainCoordinator.swift in Sources */,
 				90A4120F243688E9000289C8 /* VIArticleDetailsViewController.swift in Sources */,
-				90B8CC122437404F00496FDA /* Storage.swift in Sources */,
+				90B8CC122437404F00496FDA /* VIStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +663,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F035712437548F008DE844 /* AssignmentTests.swift in Sources */,
+				90F0357E243773B9008DE844 /* MockHelper.swift in Sources */,
+				90F0357B243770D3008DE844 /* VIStorageTest.swift in Sources */,
 				90F03574243754B7008DE844 /* VIArticleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

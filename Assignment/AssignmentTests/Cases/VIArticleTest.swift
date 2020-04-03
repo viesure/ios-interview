@@ -12,43 +12,15 @@ import XCTest
 class VIArticleTest: XCTestCase {
     var articles: [VIArticle]?
     var article: VIArticle?
-    var articleData: Data {
-        return getData(name: "Article")
-    }
     
-    var articlesData: Data {
-        return getData(name: "Articles")
-    }
-    
-    var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "mm/dd/yyyy"
-        formatter.locale = .current
-        return formatter
-    }
-    
-    var decoder: JSONDecoder {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .formatted(dateFormatter)
-        
-        return decoder
-    }
-    
-    func getData(name: String, withExtension: String = "json") -> Data {
-        let bundle = Bundle(for: type(of: self))
-        let fileUrl = bundle.url(forResource: name, withExtension: withExtension)
-        let data = try! Data(contentsOf: fileUrl!)
-        return data
-    }
+    let mockHelper = MockHelper()
     
     override func setUp() {
         super.setUp()
         
-        article = try? decoder.decode(VIArticle.self, from: articleData)
-        articles = try? decoder.decode([VIArticle].self, from: articlesData)
+        article = try? mockHelper.decoder.decode(VIArticle.self, from: mockHelper.articleData)
+        articles = try? mockHelper.decoder.decode([VIArticle].self, from: mockHelper.articlesData)
     }
-
-    
     
     func testArticleParsing() {
         XCTAssertNotNil(article)

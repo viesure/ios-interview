@@ -18,18 +18,31 @@ class AssignmentUITests: XCTestCase {
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // UI tests must launch the application that they test.
+    
+    func testArticlesSelection() {
         let app = XCUIApplication()
-        app.launch()
+        app.activate()
+        
+        let cellCount = app.tables.cells.count
+        XCTAssertTrue(cellCount > 0)
+        
+        let firstCell = app.tables.cells.element(boundBy: 0)
+        
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: firstCell, handler: nil)
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        waitForExpectations(timeout: 3, handler: nil)
+        
+        XCTAssertTrue(firstCell.exists)
+        firstCell.tap()
+        app.navigationBars["Article details"].buttons["Articles"].tap()
+        
+        let randomCell = app.tables.cells.element(boundBy: 27)
+        
+        XCTAssertTrue(randomCell.exists)
+        randomCell.tap()
+        
+        let maxReachedCell = app.tables.cells.element(boundBy: 65)
+        XCTAssertFalse(maxReachedCell.exists)
     }
 
     func testLaunchPerformance() {

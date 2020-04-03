@@ -48,12 +48,12 @@ class VIArticlesViewModel {
     }
     
     func persistArticles(_ articles: [VIArticle]) {
-        Storage.store(articles, to: .documents, as: "articles.json")
+        VIStorage.store(articles, to: .documents, as: "articles.json")
     }
     
     func getLocalCopyOfArticles() -> [VIArticle] {
-        if Storage.fileExists("articles.json", in: .documents) {
-            let articles = Storage.retrieve("articles.json", from: .documents, as: [VIArticle].self)
+        if VIStorage.fileExists("articles.json", in: .documents) {
+            let articles = VIStorage.retrieve("articles.json", from: .documents, as: [VIArticle].self)
             
             return articles
         }
