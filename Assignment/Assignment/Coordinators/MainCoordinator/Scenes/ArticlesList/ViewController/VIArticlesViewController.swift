@@ -24,7 +24,7 @@ class VIArticlesViewController: UIViewController {
         fetchArticles()
     }
     
-    private func fetchArticles() {
+    @objc private func fetchArticles() {
         viewModel.fetchArticles { [weak self] in
             guard let self = self else {
                 return
@@ -43,11 +43,16 @@ class VIArticlesViewController: UIViewController {
         tableView.rowHeight = 100.00
         
         tableView.register(VIArticleTableViewCell.nib, forCellReuseIdentifier: VIArticleTableViewCell.reuseIdentifier)
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(fetchArticles), for: .valueChanged)
+        tableView.refreshControl = refreshControl
     }
     
     private func updateUI() {
         tableView.reloadSections([0], with: .automatic)
         updateEmptyView()
+        tableView.refreshControl?.endRefreshing()
     }
     
     private func updateEmptyView() {
@@ -56,8 +61,9 @@ class VIArticlesViewController: UIViewController {
         }
         
         let label = UILabel(frame: tableView.frame)
-        label.text = "No articles 😔"
+        label.text = "No articles 😔. Pull to refresh to get the latest data. 🔝"
         label.textAlignment = .center
+        label.numberOfLines = 0
         tableView.backgroundView = label
     }
 }
