@@ -34,7 +34,46 @@ class VIArticlesViewController: UIViewController {
             }
         }
     }
+}
+
+// MARK: TableViewDelegate and DataSource
+extension VIArticlesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRows
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: VIArticleTableViewCell.reuseIdentifier) as? VIArticleTableViewCell else {
+            return UITableViewCell()
+        }
+
+        let article = viewModel.article(for: indexPath)
+        setup(cell: cell, with: article)
+
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = viewModel.article(for: indexPath)
+        
+        didSelectArticle?(article)
+    }
+}
+
+// MARK: UITableViewCell setup
+// NOTE: Could be moved to the sort of decorating class that is dedicated(to offload plain ui work from controller)
+extension VIArticlesViewController {
+    func setup(cell: VIArticleTableViewCell, with article: VIArticle) {
+        cell.selectionStyle = .none
+        cell.articleTitleLabel.text = article.title
+        cell.articleDescriptionLabel.text = article.articleDescription
+        
+        cell.articleImageView.kf.setImage(with: article.imageUrl)
+    }
+}
+
+// MARK: UI helpers
+extension VIArticlesViewController {
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -65,39 +104,5 @@ class VIArticlesViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 0
         tableView.backgroundView = label
-    }
-}
-
-// MARK: TableViewDelegate and DataSource
-extension VIArticlesViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfRows
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: VIArticleTableViewCell.reuseIdentifier) as? VIArticleTableViewCell else {
-            return UITableViewCell()
-        }
-
-        let article = viewModel.article(for: indexPath)
-        setup(cell: cell, with: article)
-
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let article = viewModel.article(for: indexPath)
-        
-        didSelectArticle?(article)
-    }
-}
-
-extension VIArticlesViewController {
-    func setup(cell: VIArticleTableViewCell, with article: VIArticle) {
-        cell.selectionStyle = .none
-        cell.articleTitleLabel.text = article.title
-        cell.articleDescriptionLabel.text = article.articleDescription
-        
-        cell.articleImageView.kf.setImage(with: article.imageUrl)
     }
 }
