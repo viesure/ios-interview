@@ -96,6 +96,7 @@ extension VIArticlesViewController {
     
     private func updateEmptyView() {
         guard viewModel.areArticlesEmpty else {
+            tableView.backgroundView = nil
             return
         }
         
