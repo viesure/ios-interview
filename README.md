@@ -20,8 +20,9 @@ This endpoint returns a dummy list of articles with the follosing structure:
 
 ## Acceptance criteria:
 * User must be able to see the latest available articles whenever he/she launches the app.
-* User must be able to see the latest -locally- stored articles (if any) in case of data  ssynchroniastion failure.
-* The article list musst be sorted by the given date.
+* User must be able to see the latest -locally- stored articles (if any) in case of data synchroniastion failure.
+* The article list must be sorted by the given date.
+* All locally stored data should be **encrypted**.
 * Article list contains the following items:
 ** Article title: `title`
 ** First two lines of `description`
@@ -40,7 +41,8 @@ This endpoint returns a dummy list of articles with the follosing structure:
 ## Minimum technical Expectation
 * Minimum **85%** test coverage.
 * Clean architecture and coding style.
-* App should support `iOS 11.0` and above.
+* Use **SwiftUI** to declare user interface.
+* App should support `iOS 13.0` and above.
 * As a mobile engineer you should be able to detect/prevent error and posssible edge cases.
 
 ## Next Step
