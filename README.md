@@ -24,16 +24,16 @@ This endpoint returns a dummy list of articles with the follosing structure:
 * The article list must be sorted by the given date.
 * All locally stored data should be **encrypted**.
 * Article list contains the following items:
-** Article title: `title`
-** First two lines of `description`
-** Article header image : `image`
+  * Article title: `title`
+  * First two lines of `description`
+  * Article header image : `image`
 * User must be able to see the full detail of articles by tapping each list item.
 * The following items must be shown in the article's detail page:
-** Article header image : `image`
-** Article title: `title`
-** Article content : `description`
-** Author e-mail address: `author`
-** Article's release date : `date` (this date must be shown by `Wed, Jul 8, '20` format)
+  * Article header image : `image`
+  * Article title: `title`
+  * Article content : `description`
+  * Author e-mail address: `author`
+  * Article's release date : `date` (this date must be shown by `Wed, Jul 8, '20` format)
 
 ## Design mockup:
 ![design](https://i.ibb.co/5WzcrWR/Screenshot-2020-03-28-at-15-25-52.png")
