@@ -38,6 +38,10 @@ This endpoint returns a dummy list of articles with the follosing structure:
 ## Design mockup:
 ![design](https://i.ibb.co/5WzcrWR/Screenshot-2020-03-28-at-15-25-52.png")
 
+## Minimum architecture requirement(s)
+* This app should follow the multi-module architecture.
+* The app must at least have two modules (articles and details)
+
 ## Minimum technical Expectation
 * Minimum **85%** test coverage.
 * Clean architecture and coding style.
