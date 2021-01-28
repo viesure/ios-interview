@@ -4,7 +4,7 @@ Use an API to fetch list of Articles, parse, persist to disk and present in a Li
 
 ## Mocked Articles API:
 ```curl
-curl --request GET 'http://viesure.free.beeceptor.com/articles'
+curl --request GET 'https://run.mocky.io/v3/de42e6d9-2d03-40e2-a426-8953c7c94fb8'
 ```
 This endpoint returns a dummy list of articles with the follosing structure:
 ```json
@@ -20,6 +20,7 @@ This endpoint returns a dummy list of articles with the follosing structure:
 
 ## Acceptance criteria:
 * User must be able to see the latest available articles whenever he/she launches the app.
+* In case of data synchroniastion failure due to a **500 internal server error or network coverage issue** we need to retry **3 times with 2 seconds backoff delay** before showing an error message to user.
 * User must be able to see the latest -locally- stored articles (if any) in case of data synchroniastion failure.
 * The article list must be sorted by the given date.
 * All locally stored data should be **encrypted**.
