@@ -15,13 +15,13 @@
 		664346FB261B902F0065D183 /* RepositoryContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664346FA261B902F0065D183 /* RepositoryContainerProtocol.swift */; };
 		66434700261B903B0065D183 /* WorkerContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664346FF261B903B0065D183 /* WorkerContainerProtocol.swift */; };
 		66434705261B90480065D183 /* InteractorContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66434704261B90480065D183 /* InteractorContainerProtocol.swift */; };
-		6643475B261CA29B0065D183 /* ViesureAssignmentCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 6643475A261CA29B0065D183 /* ViesureAssignmentCommon */; };
 		66434764261CAA490065D183 /* ViesureAssignmentArticleList in Frameworks */ = {isa = PBXBuildFile; productRef = 66434763261CAA490065D183 /* ViesureAssignmentArticleList */; };
 		66434788261CB2C10065D183 /* ViesureAssignmentArticleDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 66434787261CB2C10065D183 /* ViesureAssignmentArticleDetail */; };
 		664347A0261CC3550065D183 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643479E261CC3550065D183 /* ArticleListView.swift */; };
 		664347A1261CC3550065D183 /* ArticleSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643479F261CC3550065D183 /* ArticleSummaryView.swift */; };
 		664347A6261CC3850065D183 /* InteractorContainerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664347A5261CC3850065D183 /* InteractorContainerEnvironment.swift */; };
 		664347AB261CC38D0065D183 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664347AA261CC38D0065D183 /* DetailView.swift */; };
+		6649B99E261CDD7D0096A40F /* ViesureAssignmentCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 6649B99D261CDD7D0096A40F /* ViesureAssignmentCommon */; };
 		664BCD4526051DD1009E0CB9 /* ViesureAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664BCD4426051DD1009E0CB9 /* ViesureAssignmentApp.swift */; };
 		664BCD4926051DD7009E0CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664BCD4826051DD7009E0CB9 /* Assets.xcassets */; };
 		664BCD4C26051DD7009E0CB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664BCD4B26051DD7009E0CB9 /* Preview Assets.xcassets */; };
@@ -62,13 +62,13 @@
 		664346FA261B902F0065D183 /* RepositoryContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryContainerProtocol.swift; sourceTree = "<group>"; };
 		664346FF261B903B0065D183 /* WorkerContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerContainerProtocol.swift; sourceTree = "<group>"; };
 		66434704261B90480065D183 /* InteractorContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorContainerProtocol.swift; sourceTree = "<group>"; };
-		6643474F261CA24C0065D183 /* ViesureAssignmentCommon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViesureAssignmentCommon; path = Packages/ViesureAssignmentCommon; sourceTree = "<group>"; };
 		6643475F261CAA3C0065D183 /* ViesureAssignmentArticleList */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViesureAssignmentArticleList; path = Packages/ViesureAssignmentArticleList; sourceTree = "<group>"; };
 		6643477D261CB22C0065D183 /* ViesureAssignmentArticleDetail */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViesureAssignmentArticleDetail; path = Packages/ViesureAssignmentArticleDetail; sourceTree = "<group>"; };
 		6643479E261CC3550065D183 /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		6643479F261CC3550065D183 /* ArticleSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleSummaryView.swift; sourceTree = "<group>"; };
 		664347A5261CC3850065D183 /* InteractorContainerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractorContainerEnvironment.swift; path = ../../InteractorContainerEnvironment.swift; sourceTree = "<group>"; };
 		664347AA261CC38D0065D183 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6649B999261CDD590096A40F /* ViesureAssignmentCommon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViesureAssignmentCommon; path = Packages/ViesureAssignmentCommon; sourceTree = "<group>"; };
 		664BCD4126051DD1009E0CB9 /* ViesureAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViesureAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		664BCD4426051DD1009E0CB9 /* ViesureAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViesureAssignmentApp.swift; sourceTree = "<group>"; };
 		664BCD4826051DD7009E0CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6643475B261CA29B0065D183 /* ViesureAssignmentCommon in Frameworks */,
+				6649B99E261CDD7D0096A40F /* ViesureAssignmentCommon in Frameworks */,
 				66434788261CB2C10065D183 /* ViesureAssignmentArticleDetail in Frameworks */,
 				668988A32613163A005DA0B7 /* SwURL in Frameworks */,
 				66434764261CAA490065D183 /* ViesureAssignmentArticleList in Frameworks */,
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				6643477D261CB22C0065D183 /* ViesureAssignmentArticleDetail */,
-				6643474F261CA24C0065D183 /* ViesureAssignmentCommon */,
+				6649B999261CDD590096A40F /* ViesureAssignmentCommon */,
 				6643475F261CAA3C0065D183 /* ViesureAssignmentArticleList */,
 				665E63EB261A2926008A8B5E /* UITestingMocks */,
 				668988A72613177C005DA0B7 /* AppDelegate.swift */,
@@ -325,9 +325,9 @@
 			name = ViesureAssignment;
 			packageProductDependencies = (
 				668988A22613163A005DA0B7 /* SwURL */,
-				6643475A261CA29B0065D183 /* ViesureAssignmentCommon */,
 				66434763261CAA490065D183 /* ViesureAssignmentArticleList */,
 				66434787261CB2C10065D183 /* ViesureAssignmentArticleDetail */,
+				6649B99D261CDD7D0096A40F /* ViesureAssignmentCommon */,
 			);
 			productName = ViesureAssignment;
 			productReference = 664BCD4126051DD1009E0CB9 /* ViesureAssignment.app */;
@@ -800,10 +800,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6643475A261CA29B0065D183 /* ViesureAssignmentCommon */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ViesureAssignmentCommon;
-		};
 		66434763261CAA490065D183 /* ViesureAssignmentArticleList */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ViesureAssignmentArticleList;
@@ -811,6 +807,10 @@
 		66434787261CB2C10065D183 /* ViesureAssignmentArticleDetail */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ViesureAssignmentArticleDetail;
+		};
+		6649B99D261CDD7D0096A40F /* ViesureAssignmentCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ViesureAssignmentCommon;
 		};
 		668988A22613163A005DA0B7 /* SwURL */ = {
 			isa = XCSwiftPackageProductDependency;
