@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentArticleList
 
 struct RepositoryContainer: RepositoryContainerProtocol {
     var articleRepository: ArticleRepositoryProtocol = ArticleRepository()

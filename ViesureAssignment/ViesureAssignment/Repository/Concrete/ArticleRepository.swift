@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import ViesureAssignmentCommon
 
 enum ArticleRepositoryHTTPError: Error {
     case internalAppError

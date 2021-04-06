@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentArticleList
 
 protocol RepositoryContainerProtocol {
     var articleRepository: ArticleRepositoryProtocol { get set }

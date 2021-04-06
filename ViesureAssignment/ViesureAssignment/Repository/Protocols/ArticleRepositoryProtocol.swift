@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import ViesureAssignmentCommon
 
 protocol ArticleRepositoryProtocol {
     func get(configuration: URLSessionConfiguration) -> AnyPublisher<[Article], Error>

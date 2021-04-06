@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import ViesureAssignmentCommon
 
 class AppStore: ObservableObject {
     @Published var appState = AppState()

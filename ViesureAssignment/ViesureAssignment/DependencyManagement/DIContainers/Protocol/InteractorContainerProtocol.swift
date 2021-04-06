@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
+import ViesureAssignmentArticleDetail
+import ViesureAssignmentArticleList
 
 protocol InteractorContainerProtocol {
     init(store: AppStore, workerContainer: WorkerContainerProtocol,

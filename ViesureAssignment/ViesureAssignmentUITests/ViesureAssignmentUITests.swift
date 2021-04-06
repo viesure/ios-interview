@@ -16,11 +16,9 @@ class ViesureAssignmentUITests: XCTestCase {
         app.launchEnvironment = ["isUITesting":"true"]
         app.launch()
         
-        sleep(4)
         let firstCell = app.tables.element(boundBy: 0).cells.element(boundBy: 0)
         XCTAssertTrue(firstCell.label == "This is a title, This is a description")
         firstCell.tap()
-        sleep(1)
     
         XCTAssertTrue(app.staticTexts["This is a title"].exists)
         XCTAssertTrue(app.staticTexts["Thu, Jan 25, '18"].exists)

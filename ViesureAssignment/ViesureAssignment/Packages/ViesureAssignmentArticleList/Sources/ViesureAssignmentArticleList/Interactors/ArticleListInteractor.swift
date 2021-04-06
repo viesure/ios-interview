@@ -7,33 +7,17 @@
 
 import Foundation
 import Combine
+import ViesureAssignmentCommon
 
-protocol ArticleListInteractorProtocol {
-    init(store: AppStore,
-         articleRepository: ArticleRepositoryProtocol,
-         encryptionWorker: EncryptionWorkerProtocol,
-         fileWriterWorker: FileWriterWorkerProtocol,
-         articleDateFilterWorker: ArticleDateFilterWorkerProtocol)
+public final class ArticleListInteractor: ArticleListInteractorProtocol {
+    public var store: AppStore
+    public var articleRepository: ArticleRepositoryProtocol
+    public var encryptionWorker: EncryptionWorkerProtocol
+    public var fileWriterWorker: FileWriterWorkerProtocol
+    public var articleDateFilterWorker: ArticleDateFilterWorkerProtocol
+    private var cancellableBag: Set<AnyCancellable> = []
     
-    var store: AppStore { get set }
-    var articleRepository: ArticleRepositoryProtocol { get set }
-    var encryptionWorker: EncryptionWorkerProtocol { get set }
-    var fileWriterWorker: FileWriterWorkerProtocol { get set }
-    var articleDateFilterWorker: ArticleDateFilterWorkerProtocol { get set }
-    
-    func fetchArticles()
-    func resetErrors()
-}
-
-final class ArticleListInteractor: ArticleListInteractorProtocol {
-    var store: AppStore
-    var articleRepository: ArticleRepositoryProtocol
-    var encryptionWorker: EncryptionWorkerProtocol
-    var fileWriterWorker: FileWriterWorkerProtocol
-    var articleDateFilterWorker: ArticleDateFilterWorkerProtocol
-    var cancellableBag: Set<AnyCancellable> = []
-    
-    init(store: AppStore,
+    public init(store: AppStore,
          articleRepository: ArticleRepositoryProtocol,
          encryptionWorker: EncryptionWorkerProtocol,
          fileWriterWorker: FileWriterWorkerProtocol,
@@ -46,7 +30,7 @@ final class ArticleListInteractor: ArticleListInteractorProtocol {
         self.articleDateFilterWorker = articleDateFilterWorker
     }
     
-    func fetchArticles() {
+    public func fetchArticles() {
         articleRepository.get(configuration: URLSessionConfiguration.default)
             .sink { completion in
                 switch completion {
@@ -68,7 +52,7 @@ final class ArticleListInteractor: ArticleListInteractorProtocol {
             .store(in: &cancellableBag)
     }
     
-    func resetErrors() {
+    public func resetErrors() {
         self.store.errors.articleFetchFailure = false
     }
     

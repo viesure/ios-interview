@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
+import ViesureAssignmentArticleList
 
 protocol WorkerContainerProtocol {
     var encryptionWorker: EncryptionWorkerProtocol { get set }

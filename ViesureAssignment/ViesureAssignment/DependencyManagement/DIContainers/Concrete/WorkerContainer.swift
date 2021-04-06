@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
+import ViesureAssignmentArticleList
 
 struct WorkerContainer: WorkerContainerProtocol {
     var encryptionWorker: EncryptionWorkerProtocol = EncryptionWorker()

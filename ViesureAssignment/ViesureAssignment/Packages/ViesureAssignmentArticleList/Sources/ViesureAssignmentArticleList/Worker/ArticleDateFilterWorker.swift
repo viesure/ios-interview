@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
 
-class ArticleDateFilterWorker: ArticleDateFilterWorkerProtocol {
-    func applyDateFilter(articles: [Article]) -> [Article] {
+public class ArticleDateFilterWorker: ArticleDateFilterWorkerProtocol {
+    
+    public init() { }
+    
+    public func applyDateFilter(articles: [Article]) -> [Article] {
         return articles.sorted { (left, right) -> Bool in
             let formatterToDate = DateFormatter()
             formatterToDate.dateFormat = "mm/dd/yyyy"

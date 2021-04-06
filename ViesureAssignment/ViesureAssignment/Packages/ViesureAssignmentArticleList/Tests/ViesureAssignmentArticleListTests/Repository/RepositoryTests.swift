@@ -1,15 +1,9 @@
-//
-//  RepositoryTests.swift
-//  ViesureAssignmentTests
-//
-//  Created by Kurt Jacobs on 04.04.21.
-//
-
 import XCTest
+@testable import ViesureAssignmentArticleList
+@testable import ViesureAssignmentCommon
 import Combine
-@testable import ViesureAssignment
 
-class RepositoryTests: XCTestCase {
+final class RepositoryTests: XCTestCase {
     func testArticleRepository() throws {
         var cancellable: Set<AnyCancellable> = []
         let articleRepository = ArticleRepository()
@@ -18,7 +12,7 @@ class RepositoryTests: XCTestCase {
         config.protocolClasses = [URLProtocolMock.self]
         let expectation = XCTestExpectation(description: "dfasf")
         
-        guard let url = Bundle.main.url(forResource: "data", withExtension: "json") else {
+        guard let url = Bundle.module.url(forResource: "data", withExtension: "json") else {
             XCTFail("Bundle URL Failure")
             return
         }
@@ -43,7 +37,7 @@ class RepositoryTests: XCTestCase {
         config.protocolClasses = [FailingURLProtocolMock.self]
         let expectation = XCTestExpectation(description: "dfasf")
         
-        guard let url = Bundle.main.url(forResource: "data", withExtension: "json") else {
+        guard let url = Bundle.module.url(forResource: "data", withExtension: "json") else {
             XCTFail("Bundle URL Failure")
             return
         }
@@ -66,4 +60,8 @@ class RepositoryTests: XCTestCase {
         wait(for: [expectation], timeout: 30.0)
     }
 
+    static var allTests = [
+        ("testArticleRepository", testArticleRepository),
+        ("testFailingArticleRepository", testFailingArticleRepository),
+    ]
 }

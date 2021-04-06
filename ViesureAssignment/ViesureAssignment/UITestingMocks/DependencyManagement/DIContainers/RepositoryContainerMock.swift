@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentArticleList
 
 struct RepositoryContainerMock: RepositoryContainerProtocol {
     var articleRepository: ArticleRepositoryProtocol = ArticleRepositoryMock()

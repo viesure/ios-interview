@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
+import ViesureAssignmentArticleList
+import ViesureAssignmentArticleDetail
 
 struct InteractorContainer: InteractorContainerProtocol {
     var store: AppStore

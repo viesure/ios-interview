@@ -6,20 +6,21 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
 
-protocol ArticleDetailInteractorProtocol {
+public protocol ArticleDetailInteractorProtocol {
     init(store: AppStore)
     func fetchArticle(with identifier: Int)
 }
 
-final class ArticleDetailInteractor: ArticleDetailInteractorProtocol {
-    var store: AppStore
+public final class ArticleDetailInteractor: ArticleDetailInteractorProtocol {
+    private var store: AppStore
     
-    init(store: AppStore) {
+    public init(store: AppStore) {
         self.store = store
     }
     
-    func fetchArticle(with identifier: Int) {
+    public func fetchArticle(with identifier: Int) {
         let article = store.appState.articles.first { article in
             return article.id == identifier
         }

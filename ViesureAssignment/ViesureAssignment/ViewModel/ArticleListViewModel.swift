@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
 
 struct ArticleListViewModel: Identifiable {
     var id: Int

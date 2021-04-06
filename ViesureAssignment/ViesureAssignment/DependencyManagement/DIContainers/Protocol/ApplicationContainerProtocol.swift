@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
 
 protocol ApplicationContainerProtocol {
     var store: AppStore { get set }

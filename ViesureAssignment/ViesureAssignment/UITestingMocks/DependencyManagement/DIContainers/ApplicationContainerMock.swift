@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
 
 struct ApplicationContainerMock: ApplicationContainerProtocol {
     var store: AppStore

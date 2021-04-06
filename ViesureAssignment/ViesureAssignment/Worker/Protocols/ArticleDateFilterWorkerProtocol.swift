@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ViesureAssignmentCommon
 
 protocol ArticleDateFilterWorkerProtocol {
     func applyDateFilter(articles: [Article]) -> [Article]
