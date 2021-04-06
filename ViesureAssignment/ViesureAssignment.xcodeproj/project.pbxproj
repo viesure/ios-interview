@@ -19,7 +19,6 @@
 		66434788261CB2C10065D183 /* ViesureAssignmentArticleDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 66434787261CB2C10065D183 /* ViesureAssignmentArticleDetail */; };
 		664347A0261CC3550065D183 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643479E261CC3550065D183 /* ArticleListView.swift */; };
 		664347A1261CC3550065D183 /* ArticleSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643479F261CC3550065D183 /* ArticleSummaryView.swift */; };
-		664347A6261CC3850065D183 /* InteractorContainerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664347A5261CC3850065D183 /* InteractorContainerEnvironment.swift */; };
 		664347AB261CC38D0065D183 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664347AA261CC38D0065D183 /* DetailView.swift */; };
 		6649B99E261CDD7D0096A40F /* ViesureAssignmentCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 6649B99D261CDD7D0096A40F /* ViesureAssignmentCommon */; };
 		664BCD4526051DD1009E0CB9 /* ViesureAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664BCD4426051DD1009E0CB9 /* ViesureAssignmentApp.swift */; };
@@ -28,6 +27,7 @@
 		664BCD6226051DD8009E0CB9 /* ViesureAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664BCD6126051DD8009E0CB9 /* ViesureAssignmentUITests.swift */; };
 		665E63F2261A29CD008A8B5E /* RepositoryContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E63F1261A29CD008A8B5E /* RepositoryContainerMock.swift */; };
 		665E6410261B7E87008A8B5E /* ApplicationContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E640F261B7E87008A8B5E /* ApplicationContainerMock.swift */; };
+		668218F3261CEB5600403E19 /* InteractorContainerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668218F2261CEB5600403E19 /* InteractorContainerEnvironment.swift */; };
 		668988A32613163A005DA0B7 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = 668988A22613163A005DA0B7 /* SwURL */; };
 		668988A82613177C005DA0B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668988A72613177C005DA0B7 /* AppDelegate.swift */; };
 		66A80E5D261CD22F00537E38 /* ArticleMockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A80E5C261CD22F00537E38 /* ArticleMockFactory.swift */; };
@@ -66,7 +66,6 @@
 		6643477D261CB22C0065D183 /* ViesureAssignmentArticleDetail */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViesureAssignmentArticleDetail; path = Packages/ViesureAssignmentArticleDetail; sourceTree = "<group>"; };
 		6643479E261CC3550065D183 /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		6643479F261CC3550065D183 /* ArticleSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleSummaryView.swift; sourceTree = "<group>"; };
-		664347A5261CC3850065D183 /* InteractorContainerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractorContainerEnvironment.swift; path = ../../InteractorContainerEnvironment.swift; sourceTree = "<group>"; };
 		664347AA261CC38D0065D183 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6649B999261CDD590096A40F /* ViesureAssignmentCommon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViesureAssignmentCommon; path = Packages/ViesureAssignmentCommon; sourceTree = "<group>"; };
 		664BCD4126051DD1009E0CB9 /* ViesureAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViesureAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +80,7 @@
 		664BCD6326051DD8009E0CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665E63F1261A29CD008A8B5E /* RepositoryContainerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryContainerMock.swift; sourceTree = "<group>"; };
 		665E640F261B7E87008A8B5E /* ApplicationContainerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContainerMock.swift; sourceTree = "<group>"; };
+		668218F2261CEB5600403E19 /* InteractorContainerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorContainerEnvironment.swift; sourceTree = "<group>"; };
 		668988A72613177C005DA0B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66A80E5C261CD22F00537E38 /* ArticleMockFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleMockFactory.swift; sourceTree = "<group>"; };
 		66A80E67261CD24300537E38 /* ArticleRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArticleRepositoryMock.swift; path = ViesureAssignment/Packages/ViesureAssignmentArticleList/Tests/ViesureAssignmentArticleListTests/Mocks/ArticleRepositoryMock.swift; sourceTree = SOURCE_ROOT; };
@@ -302,7 +302,7 @@
 		66FA3EFC26189A8000C596B4 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				664347A5261CC3850065D183 /* InteractorContainerEnvironment.swift */,
+				668218F2261CEB5600403E19 /* InteractorContainerEnvironment.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -460,11 +460,11 @@
 				66322561261A1E8700227332 /* RepositoryContainer.swift in Sources */,
 				664BCD4526051DD1009E0CB9 /* ViesureAssignmentApp.swift in Sources */,
 				66322541261A005F00227332 /* ExecutionEnvironment.swift in Sources */,
+				668218F3261CEB5600403E19 /* InteractorContainerEnvironment.swift in Sources */,
 				668988A82613177C005DA0B7 /* AppDelegate.swift in Sources */,
 				66434705261B90480065D183 /* InteractorContainerProtocol.swift in Sources */,
 				66A80E5D261CD22F00537E38 /* ArticleMockFactory.swift in Sources */,
 				66A80E68261CD24300537E38 /* ArticleRepositoryMock.swift in Sources */,
-				664347A6261CC3850065D183 /* InteractorContainerEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
