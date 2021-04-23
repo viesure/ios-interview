@@ -18,6 +18,7 @@
 		D9AFEA792632C71C00027AEF /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */; };
 		D9AFEA7B2632C74D00027AEF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA7A2632C74D00027AEF /* API.swift */; };
 		D9AFEA7D2632C99300027AEF /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA7C2632C99300027AEF /* ArticlesView.swift */; };
+		D9AFEA7F2632CB4E00027AEF /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA7E2632CB4D00027AEF /* ArticleRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		D9AFEA7A2632C74D00027AEF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D9AFEA7C2632C99300027AEF /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		D9AFEA7E2632CB4D00027AEF /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */,
+				D9AFEA7E2632CB4D00027AEF /* ArticleRowView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9AFEA442632C5F900027AEF /* AppDelegate.swift in Sources */,
+				D9AFEA7F2632CB4E00027AEF /* ArticleRowView.swift in Sources */,
 				D9AFEA792632C71C00027AEF /* ArticlesViewModel.swift in Sources */,
 				D9AFEA772632C6ED00027AEF /* ArticleModel.swift in Sources */,
 				D9AFEA7D2632C99300027AEF /* ArticlesView.swift in Sources */,
