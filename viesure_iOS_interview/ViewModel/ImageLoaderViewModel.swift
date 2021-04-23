@@ -16,7 +16,7 @@ class ImageLoaderViewModel: ObservableObject {
         
         guard let url = URL(string: httpsURL) else { return }
         
-        let _ = URLSession.shared.dataTask(with: url) { data, response, error in
+        URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             DispatchQueue.main.async {
                 self.data = data

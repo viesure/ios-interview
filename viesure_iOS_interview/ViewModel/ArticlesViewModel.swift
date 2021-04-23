@@ -31,7 +31,8 @@ class ArticlesViewModel: ObservableObject {
                     print("Error: \(error.localizedDescription)")
                 }
             }
-        }.resume()
+        }
+        .resume()
     }
 }
 
