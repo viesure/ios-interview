@@ -41,7 +41,7 @@ extension Array where Element == ArticleModel {
         formatter.dateFormat = "MM/dd/yyyy"
         
         self.sort { (article1, article2) -> Bool in
-            formatter.date(from: article1.release_date)! < formatter.date(from: article1.release_date)!
+            formatter.date(from: article1.release_date)! > formatter.date(from: article2.release_date)!
         }
     }
 }
