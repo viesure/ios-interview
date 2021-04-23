@@ -27,9 +27,9 @@ class ImageLoaderViewModel: ObservableObject {
     
     ///Checks the url if it is in the https format. I font, change url string to conform to https protocol.
     private func checkURLScheme(for url: String) -> String {
-        guard var comps = URLComponents(string: url) else { return "" }
+        guard var comps = URLComponents(string: url) else { return url }
         comps.scheme = "https"
-        guard let https = comps.string else { return "" }
+        guard let https = comps.string else { return url }
         return https
     }
 }
