@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ArticlesView: View {
     @ObservedObject var articlesViewModel = ArticlesViewModel()
+    @ObservedObject var connectivityViewModel = ConnectivityViewModel()
     
     var body: some View {
         NavigationView {
@@ -27,6 +28,8 @@ struct ArticlesView: View {
                 UITableView.appearance().separatorStyle = .none
             }
         }
+        .alert(isPresented: $connectivityViewModel.showingConnectivityProblemsAlert, content: connectivityViewModel.connectivityProblemsAlert)
+        
     }
 }
 
