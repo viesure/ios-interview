@@ -26,6 +26,7 @@
 		D9AFEA8B2632F57D00027AEF /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */; };
 		D9AFEA8D2633070C00027AEF /* ConnectivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA8C2633070C00027AEF /* ConnectivityViewModel.swift */; };
 		D9AFEA922633250300027AEF /* StoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA912633250300027AEF /* StoreDataViewModel.swift */; };
+		D9AFEA982633448900027AEF /* RNCryptor in Frameworks */ = {isa = PBXBuildFile; productRef = D9AFEA972633448900027AEF /* RNCryptor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AFEA982633448900027AEF /* RNCryptor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,7 @@
 				D9AFEA592632C5FC00027AEF /* viesure_iOS_interviewTests */,
 				D9AFEA642632C5FC00027AEF /* viesure_iOS_interviewUITests */,
 				D9AFEA412632C5F900027AEF /* Products */,
+				D9AFEA962633448900027AEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +212,13 @@
 			path = ArticleDetails;
 			sourceTree = "<group>";
 		};
+		D9AFEA962633448900027AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +236,7 @@
 			);
 			name = viesure_iOS_interview;
 			packageProductDependencies = (
+				D9AFEA972633448900027AEF /* RNCryptor */,
 			);
 			productName = viesure_iOS_interview;
 			productReference = D9AFEA402632C5F900027AEF /* viesure_iOS_interview.app */;
@@ -694,6 +705,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9AFEA972633448900027AEF /* RNCryptor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9AFEA932633256E00027AEF /* XCRemoteSwiftPackageReference "RNCryptor" */;
+			productName = RNCryptor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9AFEA382632C5F900027AEF /* Project object */;
 }
