@@ -9,10 +9,14 @@
 import SwiftUI
 
 struct ArticleTextDetailsView: View {
+    
+    @ObservedObject var dateViewModel: DateViewModel
+    
     private let article: ArticleModel
         
     init(_ article: ArticleModel) {
         self.article = article
+        self.dateViewModel = DateViewModel(date: self.article.release_date)
     }
     
     var body: some View {
@@ -23,7 +27,7 @@ struct ArticleTextDetailsView: View {
 
             HStack {
                 Spacer()
-                Text(article.release_date)
+                Text(dateViewModel.date)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .padding(.bottom, 15.0)

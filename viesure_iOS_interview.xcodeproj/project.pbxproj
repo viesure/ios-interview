@@ -23,6 +23,7 @@
 		D9AFEA852632D18300027AEF /* ArticleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA842632D18300027AEF /* ArticleImageView.swift */; };
 		D9AFEA872632D19E00027AEF /* ArticleTextDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA862632D19E00027AEF /* ArticleTextDetailsView.swift */; };
 		D9AFEA892632E67500027AEF /* ImageLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA882632E67500027AEF /* ImageLoaderViewModel.swift */; };
+		D9AFEA8B2632F57D00027AEF /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		D9AFEA842632D18300027AEF /* ArticleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleImageView.swift; sourceTree = "<group>"; };
 		D9AFEA862632D19E00027AEF /* ArticleTextDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTextDetailsView.swift; sourceTree = "<group>"; };
 		D9AFEA882632E67500027AEF /* ImageLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewModel.swift; sourceTree = "<group>"; };
+		D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */,
+				D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */,
 				D9AFEA882632E67500027AEF /* ImageLoaderViewModel.swift */,
 			);
 			path = ViewModel;
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AFEA8B2632F57D00027AEF /* DateViewModel.swift in Sources */,
 				D9AFEA892632E67500027AEF /* ImageLoaderViewModel.swift in Sources */,
 				D9AFEA852632D18300027AEF /* ArticleImageView.swift in Sources */,
 				D9AFEA832632D15500027AEF /* ArticleDetailsView.swift in Sources */,
