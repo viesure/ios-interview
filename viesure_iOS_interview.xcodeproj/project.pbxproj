@@ -159,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				D9AFEA7C2632C99300027AEF /* ArticlesView.swift */,
+				D9AFEA7E2632CB4D00027AEF /* ArticleRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */,
-				D9AFEA7E2632CB4D00027AEF /* ArticleRowView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
