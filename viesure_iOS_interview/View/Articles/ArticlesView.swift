@@ -15,6 +15,16 @@ struct ArticlesView: View {
         NavigationView {
             List(articlesViewModel.articles) {article  in
                 ArticleRowView(article)
+                
+                NavigationLink(destination: ArticleDetailsView(selectedArticle: article)) {
+                    ArticleRowView(article)
+                }
+                .frame(width: 0, height: 0)
+                .opacity(0)
+            }
+            .navigationBarTitle("Articles")
+            .onAppear {
+                UITableView.appearance().separatorStyle = .none
             }
         }
     }

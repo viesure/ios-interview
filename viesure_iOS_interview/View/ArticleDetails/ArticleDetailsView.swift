@@ -21,7 +21,9 @@ struct ArticleDetailsView: View {
 
             VStack(alignment: .leading) {
                 ArticleImageView(Image("turtlerock"))
+                
                 ArticleTextDetailsView(article)
+                    .padding([.leading, .bottom, .trailing])
             }
        
         }
