@@ -12,13 +12,16 @@ struct ArticleRowView: View {
     
     private let article: ArticleModel
     
+    @ObservedObject var imageLoader: ImageLoaderViewModel
+    
     init(_ article: ArticleModel) {
         self.article = article
+        imageLoader = ImageLoaderViewModel(urlString: self.article.image)
     }
     
     var body: some View {
         HStack(alignment: .top) {
-            Image("turtlerock")
+            Image(uiImage: UIImage(data: imageLoader.data) ?? UIImage(imageLiteralResourceName: "turtlerock"))
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 45, height: 45)
