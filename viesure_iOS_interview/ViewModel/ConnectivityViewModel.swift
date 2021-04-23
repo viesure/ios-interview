@@ -18,9 +18,15 @@ class ConnectivityViewModel: ObservableObject {
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
                 print("We're connected!")
+                DispatchQueue.main.async {
+                        self.showingConnectivityProblemsAlert = false
+                }
             } else {
                 print("No connection.")
-                self.showingConnectivityProblemsAlert = true
+                DispatchQueue.main.async {
+                        self.showingConnectivityProblemsAlert = true
+                }
+                
             }
         }
         

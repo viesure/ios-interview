@@ -28,7 +28,10 @@ struct ArticlesView: View {
                 UITableView.appearance().separatorStyle = .none
             }
         }
-        .alert(isPresented: $connectivityViewModel.showingConnectivityProblemsAlert, content: connectivityViewModel.connectivityProblemsAlert)
+        .alert(isPresented: $connectivityViewModel.showingConnectivityProblemsAlert,
+               content: connectivityViewModel.connectivityProblemsAlert)
+        .alert(isPresented: $articlesViewModel.showingDataSynchronisationFailureAlert,
+               content: articlesViewModel.dataSynchronisationFailureAlert)
         
     }
 }

@@ -7,9 +7,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ArticlesViewModel: ObservableObject {
     @Published var articles = [ArticleModel]()
+    @Published var showingDataSynchronisationFailureAlert = false
+    
+    private var numberOfTimesTriedFetchingArticles = 0
     
     init() {
         self.fetchArticles()
@@ -19,8 +23,15 @@ class ArticlesViewModel: ObservableObject {
     private func fetchArticles() {
         guard let url = URL(string: API.url) else { return }
         var fetchedArticles: [ArticleModel] = []
+        numberOfTimesTriedFetchingArticles += 1
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let httpResponse = response as? HTTPURLResponse,
+                (200...299).contains(httpResponse.statusCode) else {
+                self.handleServerError(response)
+                return
+            }
+            
             DispatchQueue.main.async {
                 do {
                     guard let safeData = data else { return }
@@ -33,6 +44,28 @@ class ArticlesViewModel: ObservableObject {
             }
         }
         .resume()
+    }
+    
+    private func handleServerError(_ response: URLResponse?) {
+        guard let httpResponse = response else { return }
+        
+        if numberOfTimesTriedFetchingArticles <= 3 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                print("httpResponse: \(httpResponse)")
+                self.fetchArticles()
+            }
+        } else {
+            DispatchQueue.main.async {
+                    self.showingDataSynchronisationFailureAlert = true
+            }
+        }
+    }
+    
+    func dataSynchronisationFailureAlert() -> Alert {
+        return Alert(
+            title: Text("Data Synchronisation Failure"),
+            message: Text("We apologise bu due to a 500 internal server error or network coverage issue we were not able to load the latest articles."),
+            dismissButton: .default(Text("OK")))
     }
 }
 
