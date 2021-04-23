@@ -17,6 +17,7 @@
 		D9AFEA772632C6ED00027AEF /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA762632C6ED00027AEF /* ArticleModel.swift */; };
 		D9AFEA792632C71C00027AEF /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */; };
 		D9AFEA7B2632C74D00027AEF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA7A2632C74D00027AEF /* API.swift */; };
+		D9AFEA7D2632C99300027AEF /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA7C2632C99300027AEF /* ArticlesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D9AFEA762632C6ED00027AEF /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		D9AFEA782632C71C00027AEF /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		D9AFEA7A2632C74D00027AEF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D9AFEA7C2632C99300027AEF /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		D9AFEA742632C6C600027AEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9AFEA7C2632C99300027AEF /* ArticlesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				D9AFEA442632C5F900027AEF /* AppDelegate.swift in Sources */,
 				D9AFEA792632C71C00027AEF /* ArticlesViewModel.swift in Sources */,
 				D9AFEA772632C6ED00027AEF /* ArticleModel.swift in Sources */,
+				D9AFEA7D2632C99300027AEF /* ArticlesView.swift in Sources */,
 				D9AFEA462632C5F900027AEF /* SceneDelegate.swift in Sources */,
 				D9AFEA7B2632C74D00027AEF /* API.swift in Sources */,
 			);
