@@ -32,7 +32,7 @@ struct ArticleRowView: View {
                 Text(article.description)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                    .lineLimit(nil)
+                    .lineLimit(2)
             }
             
             Spacer()

@@ -14,7 +14,7 @@ struct ArticlesView: View {
     var body: some View {
         NavigationView {
             List(articlesViewModel.articles) {article  in
-                Text(article.title)
+                ArticleRowView(article)
             }
         }
     }
