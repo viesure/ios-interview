@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		D9AFEA442632C5F900027AEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA432632C5F900027AEF /* AppDelegate.swift */; };
 		D9AFEA462632C5F900027AEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA452632C5F900027AEF /* SceneDelegate.swift */; };
-		D9AFEA482632C5F900027AEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA472632C5F900027AEF /* ContentView.swift */; };
 		D9AFEA4A2632C5FB00027AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9AFEA492632C5FB00027AEF /* Assets.xcassets */; };
 		D9AFEA4D2632C5FB00027AEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9AFEA4C2632C5FB00027AEF /* Preview Assets.xcassets */; };
 		D9AFEA502632C5FB00027AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AFEA4E2632C5FB00027AEF /* LaunchScreen.storyboard */; };
 		D9AFEA5B2632C5FC00027AEF /* viesure_iOS_interviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA5A2632C5FC00027AEF /* viesure_iOS_interviewTests.swift */; };
 		D9AFEA662632C5FC00027AEF /* viesure_iOS_interviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA652632C5FC00027AEF /* viesure_iOS_interviewUITests.swift */; };
+		D9AFEA772632C6ED00027AEF /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA762632C6ED00027AEF /* ArticleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		D9AFEA402632C5F900027AEF /* viesure_iOS_interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viesure_iOS_interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AFEA432632C5F900027AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9AFEA452632C5F900027AEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9AFEA472632C5F900027AEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9AFEA492632C5FB00027AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9AFEA4C2632C5FB00027AEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9AFEA4F2632C5FB00027AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		D9AFEA612632C5FC00027AEF /* viesure_iOS_interviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viesure_iOS_interviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AFEA652632C5FC00027AEF /* viesure_iOS_interviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viesure_iOS_interviewUITests.swift; sourceTree = "<group>"; };
 		D9AFEA672632C5FC00027AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9AFEA762632C6ED00027AEF /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,11 @@
 		D9AFEA422632C5F900027AEF /* viesure_iOS_interview */ = {
 			isa = PBXGroup;
 			children = (
+				D9AFEA732632C6BE00027AEF /* Model */,
+				D9AFEA742632C6C600027AEF /* View */,
+				D9AFEA752632C6CD00027AEF /* ViewModel */,
 				D9AFEA432632C5F900027AEF /* AppDelegate.swift */,
 				D9AFEA452632C5F900027AEF /* SceneDelegate.swift */,
-				D9AFEA472632C5F900027AEF /* ContentView.swift */,
 				D9AFEA492632C5FB00027AEF /* Assets.xcassets */,
 				D9AFEA4E2632C5FB00027AEF /* LaunchScreen.storyboard */,
 				D9AFEA512632C5FB00027AEF /* Info.plist */,
@@ -134,6 +136,28 @@
 				D9AFEA672632C5FC00027AEF /* Info.plist */,
 			);
 			path = viesure_iOS_interviewUITests;
+			sourceTree = "<group>";
+		};
+		D9AFEA732632C6BE00027AEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9AFEA762632C6ED00027AEF /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9AFEA742632C6C600027AEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9AFEA752632C6CD00027AEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9AFEA442632C5F900027AEF /* AppDelegate.swift in Sources */,
+				D9AFEA772632C6ED00027AEF /* ArticleModel.swift in Sources */,
 				D9AFEA462632C5F900027AEF /* SceneDelegate.swift in Sources */,
-				D9AFEA482632C5F900027AEF /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
