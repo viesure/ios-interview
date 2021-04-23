@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		D9AFEA892632E67500027AEF /* ImageLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA882632E67500027AEF /* ImageLoaderViewModel.swift */; };
 		D9AFEA8B2632F57D00027AEF /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */; };
 		D9AFEA8D2633070C00027AEF /* ConnectivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA8C2633070C00027AEF /* ConnectivityViewModel.swift */; };
+		D9AFEA922633250300027AEF /* StoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEA912633250300027AEF /* StoreDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D9AFEA882632E67500027AEF /* ImageLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewModel.swift; sourceTree = "<group>"; };
 		D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewModel.swift; sourceTree = "<group>"; };
 		D9AFEA8C2633070C00027AEF /* ConnectivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityViewModel.swift; sourceTree = "<group>"; };
+		D9AFEA912633250300027AEF /* StoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				D9AFEA8A2632F57D00027AEF /* DateViewModel.swift */,
 				D9AFEA882632E67500027AEF /* ImageLoaderViewModel.swift */,
 				D9AFEA8C2633070C00027AEF /* ConnectivityViewModel.swift */,
+				D9AFEA912633250300027AEF /* StoreDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -222,6 +225,8 @@
 			dependencies = (
 			);
 			name = viesure_iOS_interview;
+			packageProductDependencies = (
+			);
 			productName = viesure_iOS_interview;
 			productReference = D9AFEA402632C5F900027AEF /* viesure_iOS_interview.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +299,9 @@
 				Base,
 			);
 			mainGroup = D9AFEA372632C5F900027AEF;
+			packageReferences = (
+				D9AFEA932633256E00027AEF /* XCRemoteSwiftPackageReference "RNCryptor" */,
+			);
 			productRefGroup = D9AFEA412632C5F900027AEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +356,7 @@
 				D9AFEA772632C6ED00027AEF /* ArticleModel.swift in Sources */,
 				D9AFEA7D2632C99300027AEF /* ArticlesView.swift in Sources */,
 				D9AFEA462632C5F900027AEF /* SceneDelegate.swift in Sources */,
+				D9AFEA922633250300027AEF /* StoreDataViewModel.swift in Sources */,
 				D9AFEA7B2632C74D00027AEF /* API.swift in Sources */,
 				D9AFEA8D2633070C00027AEF /* ConnectivityViewModel.swift in Sources */,
 			);
@@ -674,6 +683,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9AFEA932633256E00027AEF /* XCRemoteSwiftPackageReference "RNCryptor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RNCryptor/RNCryptor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D9AFEA382632C5F900027AEF /* Project object */;
 }

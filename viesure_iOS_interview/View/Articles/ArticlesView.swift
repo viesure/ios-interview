@@ -27,11 +27,11 @@ struct ArticlesView: View {
             .onAppear {
                 UITableView.appearance().separatorStyle = .none
             }
+            .alert(isPresented: $articlesViewModel.showingDataSynchronisationFailureAlert,
+                   content: articlesViewModel.dataSynchronisationFailureAlert)
         }
         .alert(isPresented: $connectivityViewModel.showingConnectivityProblemsAlert,
                content: connectivityViewModel.connectivityProblemsAlert)
-        .alert(isPresented: $articlesViewModel.showingDataSynchronisationFailureAlert,
-               content: articlesViewModel.dataSynchronisationFailureAlert)
         
     }
 }
