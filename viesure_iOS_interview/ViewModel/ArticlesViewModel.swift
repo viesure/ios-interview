@@ -19,6 +19,7 @@ class ArticlesViewModel: ObservableObject {
         self.fetchArticles()
     }
     
+    //MARK: fetchArticles
     ///Fetch articles from an API url
     private func fetchArticles() {
         guard let url = URL(string: API.url) else { return }
@@ -61,6 +62,7 @@ class ArticlesViewModel: ObservableObject {
         }
     }
     
+    //MARK: dataSynchronisationFailureAlert
     func dataSynchronisationFailureAlert() -> Alert {
         return Alert(
             title: Text("Data Synchronisation Failure"),
@@ -70,6 +72,7 @@ class ArticlesViewModel: ObservableObject {
 }
 
 extension Array where Element == ArticleModel {
+    //MARK: sortByDate Array Extension
     mutating func sortByDate() {
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"

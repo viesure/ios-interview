@@ -15,6 +15,7 @@ class DateViewModel: ObservableObject {
         changeDateFormat(dateString: date)
     }
     
+    //MARK: changeDateFormat
     private func changeDateFormat(dateString: String) {
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"

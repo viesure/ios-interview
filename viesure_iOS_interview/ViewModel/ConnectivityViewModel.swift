@@ -34,7 +34,7 @@ class ConnectivityViewModel: ObservableObject {
         monitor.start(queue: queue)
     }
     
-    
+    //MARK: connectivityProblemsAlert
     func connectivityProblemsAlert() -> Alert {
         return Alert(
             title: Text("No Internet Connection"),
